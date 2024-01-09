@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Robbie Rush Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="headcontainer">
+        <img class="rrlogo" src="assets/imageedit_4_2030998386.jpg" alt="">
+        <div onclick='handleEvent()' id="burgermenu" class="burgermenu">
+            <div class="burgerbun1"></div>
+            <div class="burgerbun2"></div>
+            <div class="burgerbun3"></div>
+        </div>
+
+
+
+        <div class="navcont">
+            <nav>
+                <ul>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="">contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="burgernav">
+        <nav>
+
+            <a onclick='handleEvent()' href="#projects">projects</a>
+            <br>
+            <a href="">contact</a>
+
+        </nav>
+    </div>
+    <main>
+        <section class="introsection">
+            <h1 class="introhead">Hello.</h1>
+            <p>I'm Robbie Rush, and I am an aspiring Full Stack Developer based in Manchester. Comfortable working in
+                both frontend and backend environments, my key skills are in JavaScript, HTML/React and the wonderful
+                (and frightening) world of CSS. Also I love burgers. Here are some of my projects. Enjoy. </p>
+        </section>
+        <hr>
+        <section id="projects" class="projectsec">
+            <h2 class="projectshead">Projects</h2>
+            <div class="projectcontainer">
+
+                <div class="projectcard">
+
+                    <h2>NC News (aka .nosey)</h2>
+                    <a href="https://nc-nosey-news.netlify.app/home"><img class="projectimg"
+                            src="assets/noseyscreen.png" alt=""></a>
+                    <p>NC News (aka .nosey) is a social news aggregation, web content rating and discussion
+                        website.
+                    </p>
+                    <div class="gitlogocont">
+                        <a href="https://github.com/rushRobBlob/fe-nc-news"><img class="gitlogo"
+                                src="assets/imageedit_5_5837034434.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="projectcard">
+
+                    <h2>NC News API</h2>
+                    <a href="https://nc-news-q2aj.onrender.com/api/"><img class="projectimg" src="assets/api screen.png"
+                            alt=""></a>
+                    <p>The backend section to the NC News site. This database is PSQL and is interacted with using
+                        node-postgres.
+                    </p>
+                    <div class="gitlogocont">
+                        <a href="https://github.com/rushRobBlob/fe-nc-news"><img class="gitlogo"
+                                src="assets/imageedit_5_5837034434.png" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="contact">
+            <h2 class="projectshead">Contact</h2>
+            <div class="contactcont">
+                <div class="contactsub">
+                    <img class="mailicon" src="assets/mailicon.png" alt="email icon">
+                    <p class="mailtext">robbierush85@gmail.com</p>
+                </div>
+                <div class="contactsub">
+                    <a class="contactlink" href="https://github.com/rushRobBlob"><img class="mailicon"
+                            src="assets/imageedit_5_5837034434.png" alt="github icon">
+
+                    </a>
+                    <p class="mailtext">rushRobBlob</p>
+
+                </div>
+                <div class="contactsub">
+                    <a class="contactlink" href="https://linkedin.com/in/robbie-rush-a702232a2"><img class="mailicon"
+                            src="assets/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" alt="github icon"></a>
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <footer class="footer">
+            <div class="footercontainer">
+                <div>
+                    <p class="footertext">(C) Robbie Rush 2023</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const burger1 = document.getElementsByClassName('burgerbun1')
+        const burger2 = document.getElementsByClassName('burgerbun2')
+        const burger3 = document.getElementsByClassName('burgerbun3')
+        const nav = document.getElementsByClassName('burgernav')
+
+        function handleEvent(e) {
+            burger1[0].classList.toggle('burgerbunclicked1')
+            burger2[0].classList.toggle('burgerbunsclicked')
+            burger3[0].classList.toggle('burgerbunclicked3')
+            nav[0].classList.toggle('burgernavslidein')
+        }
+    </script>
+</body>
+
+</html>
